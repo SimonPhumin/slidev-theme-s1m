@@ -1,0 +1,51 @@
+{
+    "name": "slidev-theme-s1m",
+    "version": "0.0.1",
+    "description": "",
+    "homepage": "https://github.com/simonphumin/slidev-theme-s1m#readme",
+    "bugs": {
+        "url": "https://github.com/simonphumin/slidev-theme-s1m/issues"
+    },
+    "author": {
+        "name": "Simon Phumin Schweikert",
+        "url": "https://simonphum.in/"
+    },
+    "license": "MIT",
+    "keywords": [
+        "slidev-theme",
+        "slidev"
+    ],
+    "engines": {
+        "node": ">=18.0.0",
+        "slidev": ">=0.19.3"
+    },
+    "scripts": {
+        "build": "slidev build example.md",
+        "dev": "slidev example.md",
+        "export": "slidev export example.md",
+        "screenshot": "slidev export example.md --per-slide --format png --output screenshots"
+    },
+    "dependencies": {
+        "@slidev/types": "0.51.0-beta.4",
+        "codemirror-theme-vars": "^0.1.2",
+        "prism-theme-vars": "^0.2.5",
+        "theme-vitesse": "^0.8.3"
+    },
+    "devDependencies": {
+        "@slidev/cli": "0.51.0-beta.4",
+        "playwright-chromium": "^1.49.1"
+    },
+    "//": "Learn more: https://sli.dev/themes/write-a-theme.html",
+    "slidev": {
+        "colorSchema": "both",
+        "highlighter": "shiki",
+        "defaults": {
+            "fonts": {
+                "serif": "Bluu Next",
+                "sans": "Inter",
+                "mono": "Hack"
+            },
+            "hightlighter": "shiki"
+        }
+    }
+}

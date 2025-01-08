@@ -1,0 +1,70 @@
+html {
+	font-size: 10pt;
+}
+
+.slidev-page,
+.slidev-layout {
+
+	overflow: hidden;
+
+	html.dark & {
+		background: #222;
+	}
+
+	h1 {
+		background: #222;
+		margin-top: -4rem;
+		margin-bottom: 2rem;
+		margin-left: -5.5rem;
+		margin-right: -5.5rem;
+        font-family: "Bluu Next", serif;
+		padding: 5.5rem 3rem 1rem 3rem;
+		width: 1000%;
+		--un-shadow-opacity: 1;
+		--un-shadow-color: #222;
+	}
+
+	&.center,
+	&.cover,
+	&.intro {
+		h1 {
+
+			display: inline-block;
+			padding: 1rem 5rem;
+			border-radius: 1rem;
+			width: unset;
+			margin-top: unset;
+			margin-left: unset;
+			margin-right: unset;
+
+			html.dark & {
+				--un-shadow-opacity: 1;
+				--un-shadow-color: #222;
+			}
+		}
+	}
+}
+
+.item {
+	margin: 1rem 0;
+	overflow: hidden;
+
+	html.dark & {
+		--un-shadow-color: #111;
+	}
+
+	header {
+		padding: 0.5rem;
+		color: white;
+		background: #222;
+	}
+
+	main {
+		padding: 0.5rem;
+		background: #E9E9F3;
+
+		html.dark & {
+			background: #444;
+		}
+	}
+}
